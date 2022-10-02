@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -12,9 +13,10 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
+
       <section class="card" id="html-section">
-        <h2></HTML></h2>
-        Notes on HTML:
+        <h2>HTML</h2>
+       <!-- <p>Notes on HTML:</p> -->
         <ul>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
@@ -22,12 +24,15 @@
           <li>When using headers, always start with h1 before moving to subsequent header numbers, and only have h1 appear once per page. This is for better optmization with assistive technology.</li>
           <li>"src" = "source" of an image, and potentially other files.</li>
           <li>"alt" = alternative descriptive text, for assistive technology and SEO.</li>
+          <li>To comment out in HTML, use < ! -- [content you want commented out] -- > without spaces.</li>
+          <li>A margin indicates how much space will be around the outside of an element</li>
+          <li>Padding indicates how much space will be between the content inside an element</li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
-        Notes on CSS:
+      <!-- <p>Notes on CSS:</p> -->
         <ul>
           <li>Notes start here</li>          
         </ul>
@@ -35,18 +40,32 @@
 
       <section class="card" id="git-section">
         <h2>Git</h2>
-        Notes on git:
+        <!-- <p>Notes on Git:</p> -->
         <ul>
-          <li>git status: checks what branch you're currently on</li>
-          <li>git checkout -b branch-name: creates new branch and switches to it</li>
-          <li>git checkout branch-name: switches to branch named</li>
-          <li>(insert link to git cheatsheet here)</li>
-        </ul>
+          <li>git pull branch-name (e.g., git pull origin main): pulls specified branch to update local repo</li>
+          <li>git status: checks status of changes made, lists staged and ustaged changes</li>
+          <li>git log: lists history of commits made in chronological order</li>
+          <li>git branch: lists branches and indicates active branch with * followed by name of branch</li>
+          <li>git checkout branch-name: switches to specified branch</li>
+          <li>git checkout -b branch-name: creates new branch and makes it active</li>
+          <li>git --amend: amend most recent commit's comment/message (useful for correcting typos or other issues with commit messages)</li>
+          <li>git merge:  </li>
+          <li>git push: </li>
+          <li>merging vs. rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing</li>
+          <li>git merge working-branch target-branch: merges target branch into working branch (e.g., git merge feature main would merge main branch into feature branch, creating a new merge commit in the feature branch tying the histories of both together.</li>
+
+          <li>In some cases, it might be helpful to "squash" the number of commits down to one commit when going to merge your work back into the main branch. To squash commits, take the following steps:</li>
+          <ul>
+              <li>Start an interactive rebase session with git rebase -i HEAD~[number of most recent commits you'd like to squash]</li>
+              <li>The number of commits will show up in the editor preceded by "pick." Replace "pick" with "squash."</li>
+              <li>Enter a message for the new, combining commit, completing the interactive rebase.</li>
+              </ul>
+          </ul>
       </section>
 
       <section class="card" id="javascript-section"> 
         <h2>Javascript</h2>
-        Notes on Javascript:
+       <!-- Notes on Javascript: -->
         <ul>
           <li>Enter notes here</li>
         </ul>
