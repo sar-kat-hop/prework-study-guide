@@ -18,15 +18,14 @@
         <h2>HTML</h2>
        <!-- <p>Notes on HTML:</p> -->
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
-          <li>Viewport (in the head element) affects scaling for devices by size.</li>
-          <li>When using headers, always start with h1 before moving to subsequent header numbers, and only have h1 appear once per page. This is for better optmization with assistive technology.</li>
-          <li>"src" = "source" of an image, and potentially other files.</li>
-          <li>"alt" = alternative descriptive text, for assistive technology and SEO.</li>
+          <li>The head element contains encoding information about the webpage for browsers</li>
+          <li>Viewport, in the head element, allows content to be scaled properly for display across devices</li>
+          <li>The body element contains content visible to the user</li>
+          <li>When using headers, always start with h1 before moving to subsequent header numbers, and only have h1 appear once per page; this is for better optmization with assistive technology</li>
+           <ul><li>Plus, trying to use a subsequent header number between preceding headers just doesn't work. To nest content, use other methods.</li></ul>
+          <li>"src" = "source" of an image, and potentially other files?</li>
+          <li>"alt" = alternative descriptive text, for assistive technology and SEO</li>
           <li>To comment out in HTML, use < ! -- [content you want commented out] -- > without spaces.</li>
-          <li>A margin indicates how much space will be around the outside of an element</li>
-          <li>Padding indicates how much space will be between the content inside an element</li>
         </ul>
       </section>
 
@@ -34,7 +33,9 @@
         <h2>CSS</h2>
       <!-- <p>Notes on CSS:</p> -->
         <ul>
-          <li>Notes start here</li>          
+          <li>CSS = "cascading styles sheet")</li>
+          <li>Margin = how much space will be around the outside of an element</li>
+          <li>Padding = how much space will be between the content inside an element</li>       
         </ul>
       </section>
 
@@ -42,18 +43,43 @@
         <h2>Git</h2>
         <!-- <p>Notes on Git:</p> -->
         <ul>
-          <li>git pull branch-name (e.g., git pull origin main): pulls specified branch to update local repo</li>
+            <li>The general flow of using GitHub:</li>
+            <ul>
+                <li>Create repo in GitHub</li>
+                <li>Clone to local machine (git clone [repo name])</li>
+                <li>Create new working branch with descriptive name pertaining to changes being made (git checkout -b [new branch name])</li>
+                <li>Make desired changes</li>
+                <li>Stage desired changes (git add -A to stage all)</li>
+                <li>Commit desired changes with a comment, ideally in imperative present tense, describing changes being committed (git commit -m "[comment here])</li>
+                <li>Ensure active branch is up to date before making PR or pushing changes with git pull origin main</li>
+                <li>Push changes with git push origin [active branch name]</li>
+                <li>Make pull request in GitHub comparing main as base to new ("comparison") branch with commits to merge</li>
+                <li>Merge comparison branch into main branch</li>
+                <li>Close corresponding issue in GitHub if resolved by changes</li>
+                <li>Update local copy of main branch (git checkout main)</li>
+                <li>Pull remote main branch into local main branch (git pull origin main)</li>
+                <li>Make new branch for additional changes, repeat process as necessary</li>
+            </ul>
+        </ul>
+      <ul>
+        <li>Git terminal commands and info:</li>
+        <ul>
+          <li>git pull [branch name] (e.g., git pull origin main): pulls specified branch to update local repo</li>
           <li>git status: checks status of changes made, lists staged and ustaged changes</li>
-          <li>git log: lists history of commits made in chronological order</li>
+          <li>git log: lists history of commits made in descending chronological order</li>
           <li>git branch: lists branches and indicates active branch with * followed by name of branch</li>
-          <li>git checkout branch-name: switches to specified branch</li>
-          <li>git checkout -b branch-name: creates new branch and makes it active</li>
+          <li>git checkout [branch name]: switches to specified branch</li>
+          <li>git checkout -b [branch name]: creates new branch and makes it active</li>
           <li>git --amend: amend most recent commit's comment/message (useful for correcting typos or other issues with commit messages)</li>
-          <li>git merge:  </li>
-          <li>git push: </li>
-          <li>merging vs. rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing</li>
-          <li>git merge working-branch target-branch: merges target branch into working branch (e.g., git merge feature main would merge main branch into feature branch, creating a new merge commit in the feature branch tying the histories of both together.</li>
-
+          <li>git push [remote branch to update] [active branch to update with]: pushes active branch's changes to specified remote branch (usually origin)
+              <ul> <li> <a href="https://git-scm.com/docs/git-push">Info on git push commands here</a> </li>
+              </ul>
+          <li>merging vs. rebasing: <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Link to Atlassian git tutorial on merging vs. rebasing</a></li>
+          <li>git merge [working branch name] [target branch name]: merges target branch into working branch (e.g., git merge feature main would merge main branch into feature branch, creating a new merge commit in the feature branch tying the histories of both together</li>
+            <ul><li>git merge can also be used to incorporate changes from specified commits since the point their histories diverged from the active branch into the active branch</li>
+                <ul><li>Running git merge when "non-trivial" changes have been made is discouraged: it can cause merge conflicts that are difficult to resolve</li></ul>
+               <li> <a href="https://git-scm.com/docs/git-merge">More information on uses of git merge here</a></li>
+            </ul>
           <li>In some cases, it might be helpful to "squash" the number of commits down to one commit when going to merge your work back into the main branch. To squash commits, take the following steps:</li>
           <ul>
               <li>Start an interactive rebase session with git rebase -i HEAD~[number of most recent commits you'd like to squash]</li>
@@ -61,10 +87,11 @@
               <li>Enter a message for the new, combining commit, completing the interactive rebase.</li>
               </ul>
           </ul>
+        </ul>
       </section>
 
       <section class="card" id="javascript-section"> 
-        <h2>Javascript</h2>
+        <h2>JavaScript</h2>
        <!-- Notes on Javascript: -->
         <ul>
           <li>Enter notes here</li>
