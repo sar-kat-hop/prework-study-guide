@@ -55,16 +55,20 @@ ul {
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 20px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Avenir, Segoe UI, Arial, sans-serif;
     list-style-type: disc;
     text-align: left;
 }
 
 p {
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 14px;
     font-family: Avenir, Segoe UI, Arial, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .card {
