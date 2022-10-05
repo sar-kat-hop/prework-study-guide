@@ -8,6 +8,14 @@
     <title>Prework Study Guide</title>
   </head>
 
+<!--
+  <style>
+    div {
+      display: inline-block;
+    }
+  </style>
+-->
+
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
@@ -21,32 +29,32 @@
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
-       <!-- <p>Notes on HTML:</p> -->
         <ul>
-          <li>The head element contains encoding information about the webpage for browsers</li>
-          <li>Viewport, in the head element, allows content to be scaled properly for display across devices</li>
-          <li>The body element contains content visible to the user</li>
+          <li>The <em>head</em> element contains encoding information about the webpage for browsers</li>
+            <ul><li><em>Viewport</em> allows content to be scaled properly for display across devices</li></ul>
+          <li>The <em>body</em> element contains content visible to the user</li>
           <li>When using headers, always start with h1 before moving to subsequent header numbers, and only have h1 appear once per page; this is for better optmization with assistive technology</li>
-           <ul><li>Plus, trying to use a subsequent header number between preceding headers just doesn't work. To nest content, use other methods.</li></ul>
-          <li>"src" = "source" of an image, and potentially other files?</li>
+           <ul><li><em>Plus, trying to use a subsequent header number between preceding headers just doesn't work. To nest content, use other methods.</em></li></ul>
+          <li>"src" = "source" of an image, etc.</li>
           <li>"alt" = alternative descriptive text, for assistive technology and SEO</li>
-          <li>To comment out in HTML, use < ! -- [content you want commented out] -- > without spaces.</li>
+          <li>To comment out in HTML type the following without spaces: <em> < !--code you want commented out-- > </em></li>
+          <li>Using elements in HTML to make text italic, bold, and more: visit <a href="https://blog.hubspot.com/website/how-to-bold-in-html#:~:text=How%20to%20Italicize%20Text%20in,property%20set%20to%20%E2%80%9Citalic.%E2%80%9D">this helpful blog page</a>, which also includes information on how to accomplish the same in CSS when more appropriate.</li>
+          <li>To insert a link, type without spaces: < a href:"URL"> text you want to display as the link < /a> </li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
-      <!-- <p>Notes on CSS:</p> -->
         <ul>
-          <li>CSS = "cascading styles sheet")</li>
-          <li>Margin = how much space will be around the outside of an element</li>
-          <li>Padding = how much space will be between the content inside an element</li>       
+          <li>CSS: "cascading styles sheet"</li>
+          <li>Margin: how much space will be around the outside of an element</li>
+          <li>Padding: how much space will be between the content inside an element</li>
+          <li>For information on using properties in CSS to emphasize text, visit <a href="https://blog.hubspot.com/website/how-to-bold-in-html#:~:text=How%20to%20Italicize%20Text%20in,property%20set%20to%20%E2%80%9Citalic.%E2%80%9D">this helpful blog page</a> again.</li> 
         </ul>
       </section>
 
       <section class="card" id="git-section">
         <h2>Git</h2>
-        <!-- <p>Notes on Git:</p> -->
         <ul>
             <li>The general flow of using GitHub:</li>
             <ul>
@@ -79,26 +87,44 @@
           <li>git push [remote branch to update] [active branch to update with]: pushes active branch's changes to specified remote branch (usually origin)
               <ul> <li> <a href="https://git-scm.com/docs/git-push">Info on git push commands here</a> </li>
               </ul>
-          <li>merging vs. rebasing: <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Link to Atlassian git tutorial on merging vs. rebasing</a></li>
+          <li>Merging vs. rebasing: <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Link to Atlassian git tutorial on merging vs. rebasing</a></li>
           <li>git merge [working branch name] [target branch name]: merges target branch into working branch (e.g., git merge feature main would merge main branch into feature branch, creating a new merge commit in the feature branch tying the histories of both together</li>
             <ul><li>git merge can also be used to incorporate changes from specified commits since the point their histories diverged from the active branch into the active branch</li>
                 <ul><li>Running git merge when "non-trivial" changes have been made is discouraged: it can cause merge conflicts that are difficult to resolve</li></ul>
                <li> <a href="https://git-scm.com/docs/git-merge">More information on uses of git merge here</a></li>
-            </ul>
-          <li>In some cases, it might be helpful to "squash" the number of commits down to one commit when going to merge your work back into the main branch. To squash commits, take the following steps:</li>
-          <ul>
-              <li>Start an interactive rebase session with git rebase -i HEAD~[number of most recent commits you'd like to squash]</li>
-              <li>The number of commits will show up in the editor preceded by "pick." Replace "pick" with "squash."</li>
-              <li>Enter a message for the new, combining commit, completing the interactive rebase.</li>
-              </ul>
           </ul>
+          <li>Squashing commits:</li>
+            <ul><li>In some cases, it might be helpful to "squash" the number of commits down to one commit when going to merge your work back into the main branch. To squash commits, take the following steps:</li>
+                <ul>          
+                  <li>Start an interactive rebase session with git rebase -i HEAD~[number of most recent commits you'd like to squash]</li>
+                  <li>The number of commits will show up in the editor preceded by "pick." Replace "pick" with "squash."</li>
+                  <li>Enter a message for the new, combining commit, completing the interactive rebase.</li>
+                </ul>
         </ul>
       </section>
 
       <section class="card" id="javascript-section"> 
         <h2>JavaScript</h2>
-        <p> JavaScript is an object-oriented programming (OOP) language, meaning that it organizes software design around data -- AKA objects -- rather than functions and logic. Objects are data fields/items with unique attributes and behaviors.</p>
+      
+      <!-- 
+        <h2>
+          <strong>~More to be added soon~</strong>
+        </h2> 
+      -->
+
         <ul>
+          <li>Intro: JavaScript is an object-oriented programming (OOP) language, meaning that it organizes software design around data (objects) rather than functions and logic.</li>
+        </ul>
+        <ul>
+          <li>Object</li>
+            <ul><li>A data field/item with a unique attribute and behavior</li>
+                <li>A value in memory which is possibly referenced by an identifier</li>
+            </ul>
+          <li>Identifier</li>
+            <ul><li>A sequence of characters in code that identifies a variable, function, or property</li>
+                <li>JavaScript identifiers are <em>case-sensitive</em> and can contain Unicode letters, $, _, and digits 0 through 9, but can't <em>start</em> with a digit</li>
+                <li>It's not possible to convert identifiers to strings but you can sometimes <em>parse</em> strings into identifiers</li>
+            </ul>
           <li>Control flow</li>
             <ul><li>The order a computer executes code in a script</li>
                 <li>JavaScript runs from top to bottom</li>
@@ -109,22 +135,30 @@
               <li>var name = "[name)";</li>
               <li>A named container allowing you to store data in your code</li>
             </ul>
-          <li>String</li>
+          <li>Property</li>
+            <ul><li> </li></ul>
+          <li>Primitive values</li>
             <ul>
-              <li>Text following a variable</li>
-              <li>Always needs to be enclosed in quotes " "</li>
-              <li>To access, refer to the associated variable's name</li>
-              <li>Example 1: var shape = "circle";</li>
-              <li>Example 2: var studentInfo = ["Kate", 28, true];</li>
+              <li>Immutable (i.e., unchangeable) data represented directly at the lowest level of the language</li>
+                <ul>
+                  <li>Boolean: Can have value of True or False</li>
+                  <li>Null: Has value of null</li>
+                  <li>Undefined: A variable that hasn't been assigned a value</li>
+                  <li>Numeric types: Number, BigInt, and the related value NaN</li>
+                  <li>Number: A numeric value in the IEEE 754 format</li>
+                  <li>BigInt: A numeric primitive that can represent integers outside the "safe" limit, created by adding <em>n</em> to the end of an integer or by calling the constructor</li>
+                  <li>String: Textual data; a set of "elements" of 16-bit unsigned integer values with each occupying a position in the string</li>
+                    <ul>
+                      <li>As a zero-indexed, sequential language, the first element in a JavaScript string will always be at index 0, the next at 1, and etc.</li>
+                      <li>Must always be enclosed in quote marks " "</li>
+                      <ul><li>Example: var StudentInfo = ["Kate", 28, true];</li></ul>
+                    </ul>
+                 <li>Symbol: A unqiue, immutable primitive value that can be used as the key of an object property; sometimes called "atoms" in other languages</li>
+                </ul>
             </ul>
-          <li>Boolean values</li>
-            <ul>
-              <li><italic>True</italic> or <italic>False</italic></li>
-            </ul>          
-          <li>Numerical values</li>
-            <ul>
-              <li>Don't need to be enclosed in quotes " "</li>
-            </ul>
+          <li>NaN: "Not a Number"</li>
+          <li>Constructor</li>
+            <ul><li> </li></ul>
           <li>Array</li>
             <ul>
               <li>A single variable storing more than one kind of data, usually related to each other</li>
@@ -132,10 +166,9 @@
             </ul>
           <li>Index</li>
             <ul>
-              <li>A unique numerical indentifier automatically assigned to every item in an array</li>
+              <li>A unique numerical indentifier automatically assigned to every item in an array, starting from 0 (see notes on strings above)</li>
               <li>Always a whole number</li>
-              <li>Because JavaScript is <italic>0-indexed</italic> and <italic>sequential</italic>, the first item in an array always has an index of 0</li>
-              <li>Indices are determined by the order each item is listed in an array</li>
+              <li>The order an element appears in a an array or string determines its index</li>
             </ul>
           <li>Method</li>
             <ul>
@@ -143,34 +176,46 @@
             </ul>
           <li>Commenting out: /* [...] */ and //</li>
 
-          <li>Conditions: If statements</li>
+          <!-- Commenting out until content is added
+
+          <li>Functions</li>
+            <ul><li> </li></ul>
+
+          <li>If else</li>
+            <ul><li> </li></ul>
 
           <li>For loops</li>
+            <ul><li> </li></ul>
 
           <li>Operators</li>
             <ul>
-              <li>=== <italic>A strict equality operator that checks if two values are exactly equal, returning boolean value of true if equal and false if not</italic></li>
+              <li> === : A strict equality operator that checks if two values are exactly equal, returning boolean value of true if equal and false if not</li>
             </ul>
           <li>Misc commands</li>
             <ul>
-              <li>.log() <italic>A method used for debugging that outputs what's named in the parentheses</italic></li>
-              <li>console.log(variable name) <italic>Outs named variable to console</italic></li>
+              <li>.log() : A method used for debugging that outputs what's named in the parentheses</li>
+              <li>console.log(variable name) : Outputs named variable to console</li>
             </ul>
+
+          -->
 
         </ul>
       </section>
     
     <section class="card" id="vim-section">
       <h2>Vim</h2>
-      <!-- Notes on Vim/Vi editor here -->
+      <h2>
+        <strong>More coming soon</strong>
+      </h2>
       <ul>
-        <li>Enter notes here</li>
+        <li>Entering Insert mode: </li>
+        <li>Entering Command mode: </li>
       </ul>
     </section>
   </main>
 
     <footer>
-      <p>I can code!</p>
+      <p>Thanks for visiting!</p>
     </footer>
 
     <script src="./assets/script.js"></script>
