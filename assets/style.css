@@ -41,6 +41,16 @@ h2 {
     color: lightskyblue;
 }
 
+h2 strong {
+    display: inline;
+    font-family: inherit;
+    text-align: center;
+    font-size: 50%;
+    color: inherit;
+    font-style: italic;
+    padding-top: 10px;
+}
+
 img {
     display: block;
     height: 50px;
@@ -51,25 +61,52 @@ img {
 }
 
 ul {
-    padding-top: 10px;
-    padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 20px;
-    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
     font-family: Avenir, Segoe UI, Arial, sans-serif;
+    line-height: 150%;
     list-style-type: disc;
     text-align: left;
 }
 
 p {
-    text-align: left;
-    font-size: 14px;
+    text-align: center;
+    font-size: 12px;
     font-family: Avenir, Segoe UI, Arial, sans-serif;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* Tried using span then textarea disabled with div to ignore code snippets in HTML that I wanted to display as regular text on the webpage inline with the rest of the text, but neither option got it to display on one line. Both cause the text to display in a two-line box. Leaving this here to return to at a later time.
+
+span {
+    display: inline-block;
+}
+
+div {
+    display: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+textarea {
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    outline: none;
+    border: none;
+    resize: none;
+*/
 
 .card {
     width: 80%;
