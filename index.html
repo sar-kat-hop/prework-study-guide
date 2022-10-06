@@ -18,7 +18,7 @@
 
   <body>
     <header id="top">
-      <h1>Prework Study Guide</h1>
+      <h1>Prework Study Notes</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
       </h1>
       <h1>
@@ -27,6 +27,7 @@
     </header>
 
     <main>
+
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
@@ -34,22 +35,22 @@
             <ul><li><em>Viewport</em> allows content to be scaled properly for display across devices</li></ul>
           <li>The <em>body</em> element contains content visible to the user</li>
           <li>When using headers, always start with h1 before moving to subsequent header numbers, and only have h1 appear once per page; this is for better optmization with assistive technology</li>
-           <ul><li><em>Plus, trying to use a subsequent header number between preceding headers just doesn't work. To nest content, use other methods.</em></li></ul>
           <li>"src" = "source" of an image, etc.</li>
-          <li>"alt" = alternative descriptive text, for assistive technology and SEO</li>
-          <li>To comment out in HTML type the following without spaces: <em> < !--code you want commented out-- > </em></li>
-          <li>Using elements in HTML to make text italic, bold, and more: visit <a href="https://blog.hubspot.com/website/how-to-bold-in-html#:~:text=How%20to%20Italicize%20Text%20in,property%20set%20to%20%E2%80%9Citalic.%E2%80%9D">this helpful blog page</a>, which also includes information on how to accomplish the same in CSS when more appropriate.</li>
-          <li>To insert a link, type without spaces: < a href:"URL"> text you want to display as the link < /a> </li>
+          <li>To comment out, type the following without spaces: <em> < !--code you want commented out-- > </em></li>
+          <li>Using elements in HTML to make text italic, bold, and more: visit <a href="https://blog.hubspot.com/website/how-to-bold-in-html#:~:text=How%20to%20Italicize%20Text%20in,property%20set%20to%20%E2%80%9Citalic.%E2%80%9D">this helpful blog page</a>, which also includes information on how to accomplish the same in CSS when more appropriate</li>
+          <li>To insert a link, type without spaces: <em> < a href:"URL"> text you want to display as the link < /a></em></li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>CSS: "cascading styles sheet"</li>
+          <li>Cascading Style Sheets, or CSS, is a stylesheet language used to style an HTML document by describing how HTML elements should be displayed</li>
           <li>Margin: how much space will be around the outside of an element</li>
           <li>Padding: how much space will be between the content inside an element</li>
-          <li>For information on using properties in CSS to emphasize text, visit <a href="https://blog.hubspot.com/website/how-to-bold-in-html#:~:text=How%20to%20Italicize%20Text%20in,property%20set%20to%20%E2%80%9Citalic.%E2%80%9D">this helpful blog page</a> again.</li> 
+          <li>For basic info on CSS, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs' article on CSS</a></li>
+          <li>For a tutorial with tons of examples, visit <a href="https://www.w3schools.com/css/">W3 Schools' CSS Tutorial webpage</a></li>
+          <li>For information on using properties in CSS to emphasize text, visit <a href="https://blog.hubspot.com/website/how-to-bold-in-html#:~:text=How%20to%20Italicize%20Text%20in,property%20set%20to%20%E2%80%9Citalic.%E2%80%9D">this helpful blog page</a> from the HTML notes section above</li> 
         </ul>
       </section>
 
@@ -105,38 +106,36 @@
 
       <section class="card" id="javascript-section"> 
         <h2>JavaScript</h2>
-      
-      <!-- 
-        <h2>
-          <strong>~More to be added soon~</strong>
-        </h2> 
-      -->
-
+      <div><p>JavaScript is an object-oriented programming language, meaning that it organizes software design around data (objects) instead of functions and logic.</p></div>
         <ul>
-          <li>Intro: JavaScript is an object-oriented programming (OOP) language, meaning that it organizes software design around data (objects) rather than functions and logic.</li>
-        </ul>
-        <ul>
+          <li>Control flow</li>
+          <ul><li>The order a computer executes code (from the first line to the last line)</li>
+              <li>Using conditional statements and loops can change order code is run or prevent code from running at all</li>
+          </ul>
           <li>Object</li>
             <ul><li>A data field/item with a unique attribute and behavior</li>
                 <li>A value in memory which is possibly referenced by an identifier</li>
             </ul>
           <li>Identifier</li>
-            <ul><li>A sequence of characters in code that identifies a variable, function, or property</li>
-                <li>JavaScript identifiers are <em>case-sensitive</em> and can contain Unicode letters, $, _, and digits 0 through 9, but can't <em>start</em> with a digit</li>
-                <li>It's not possible to convert identifiers to strings but you can sometimes <em>parse</em> strings into identifiers</li>
-            </ul>
-          <li>Control flow</li>
-            <ul><li>The order a computer executes code in a script</li>
-                <li>JavaScript runs from top to bottom</li>
-                <li>Using conditional statements and loops can change order code is run or prevent code from running</li>
+            <ul>
+              <li>A sequence of characters in code that identifies a variable, function, or property</li>
+              <li>JavaScript identifiers are <em>case-sensitive</em> and can contain Unicode letters, $, _, and digits 0 through 9, but can't <em>start</em> with a digit</li>
             </ul>
           <li>Variable</li>
             <ul>
-              <li>var name = "[name)";</li>
               <li>A named container allowing you to store data in your code</li>
             </ul>
-          <li>Property</li>
-            <ul><li> </li></ul>
+          <li>Array</li>
+            <ul>
+              <li>An object storing more than one kind of data, usually related to each other, under one variable name</li>
+              <li>Grouping data in an array is a fundamental feature of JavaScript</li>
+            </ul>
+            <li>Property</li>
+              <ul><li>A characteristic of an object, often describing attributes associated with a data structure</li>
+                <li><em>Instance</em> properties hold data specific to a given object instance</li>
+                <li><em>Static</em> properties hold data shared between all object instances</li>
+                <li>A property has a name (a string or symbol) and value (primitive, method, or object reference)</li>
+              </ul>
           <li>Primitive values</li>
             <ul>
               <li>Immutable (i.e., unchangeable) data represented directly at the lowest level of the language</li>
@@ -144,9 +143,12 @@
                   <li>Boolean: Can have value of True or False</li>
                   <li>Null: Has value of null</li>
                   <li>Undefined: A variable that hasn't been assigned a value</li>
-                  <li>Numeric types: Number, BigInt, and the related value NaN</li>
-                  <li>Number: A numeric value in the IEEE 754 format</li>
-                  <li>BigInt: A numeric primitive that can represent integers outside the "safe" limit, created by adding <em>n</em> to the end of an integer or by calling the constructor</li>
+                  <li>Numeric types: Number, BigInt, and NaN</li>
+                    <ul>
+                      <li>Number: A numeric value in the IEEE 754 format</li>
+                      <li>BigInt: A numeric primitive that can represent integers outside the "safe" limit, created by adding <em>n</em> to the end of an integer or by calling the constructor</li>
+                      <li>NaN: "Not a Number"</li>
+                    </ul>
                   <li>String: Textual data; a set of "elements" of 16-bit unsigned integer values with each occupying a position in the string</li>
                     <ul>
                       <li>As a zero-indexed, sequential language, the first element in a JavaScript string will always be at index 0, the next at 1, and etc.</li>
@@ -156,13 +158,10 @@
                  <li>Symbol: A unqiue, immutable primitive value that can be used as the key of an object property; sometimes called "atoms" in other languages</li>
                 </ul>
             </ul>
-          <li>NaN: "Not a Number"</li>
           <li>Constructor</li>
-            <ul><li> </li></ul>
-          <li>Array</li>
-            <ul>
-              <li>A single variable storing more than one kind of data, usually related to each other</li>
-              <li>Grouping data in an array is a fundamental feature of JavaScript</li>
+            <ul><li>A method of a class for making and initializing an object instance of that class</li>
+              <li>Allows you to provide any custom initialization that must be done before any other methods can be called on an instantiated object</li>
+              <li>See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor">MDN Web Docs' page on constructors for more info</a></li>
             </ul>
           <li>Index</li>
             <ul>
@@ -175,41 +174,25 @@
               <li>A set of instructions that a computer can execute</li>
             </ul>
           <li>Commenting out: /* [...] */ and //</li>
-
-          <!-- Commenting out until content is added
-
-          <li>Functions</li>
-            <ul><li> </li></ul>
-
-          <li>If else</li>
-            <ul><li> </li></ul>
-
-          <li>For loops</li>
-            <ul><li> </li></ul>
-
-          <li>Operators</li>
-            <ul>
-              <li> === : A strict equality operator that checks if two values are exactly equal, returning boolean value of true if equal and false if not</li>
-            </ul>
-          <li>Misc commands</li>
-            <ul>
-              <li>.log() : A method used for debugging that outputs what's named in the parentheses</li>
-              <li>console.log(variable name) : Outputs named variable to console</li>
-            </ul>
-
-          -->
-
         </ul>
       </section>
     
     <section class="card" id="vim-section">
       <h2>Vim</h2>
-      <h2>
-        <strong>More coming soon</strong>
-      </h2>
+      <div><p>Vim, included as "vi" with most Unix systems and OS X, is an open-source text editor designed for using from the terminal or as a standalone text editor with a GUI. It has 12 different editing modes.</p></div>
       <ul>
-        <li>Entering Insert mode: </li>
-        <li>Entering Command mode: </li>
+        <li>Modes:</li>
+          <ul>
+            <li>Normal: The default mode, used for editor commands; hit Esc to enter Normal mode</li>
+            <li>Visual: Used to highlight areas of text to run normal commands on</li>
+            <li>Insert: Allows editing/insertion of text; hit i to enter Insert mode</li>
+            <li>Command-line / Cmdline: Allows a single line input at the bottom of the Vim window; upon completion of the command, Vim returns to the previous mode</li>
+          </ul>
+        <li>To navigate lines of text, use the h, j, k, and l keys instead of the mouse or arrow keys</li>
+        <li>To navigate between words, use the w, b, and e keys</li>
+        <li>You can combine movement keys with a number to move the cursor as instructed multiple times (e.g., 3w is the same as hitting w three times)</li>
+        <li>For an interactive Vim tutorial, visit <a href="https://www.openvim.com/">OpenVim.com</a></li>
+        <li>For a very helpful cheatsheet on Vim shortcuts and commands, take a look at <a href="https://vim.rtorr.com/">this online cheat sheet.</a></li>
       </ul>
     </section>
   </main>

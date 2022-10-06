@@ -13,39 +13,40 @@ footer {
     padding-top: 20px;
     padding-bottom:20px;
     text-align: center;
+    font-family: Avenir, Helvetica Neue, Segoe UI, sans-serif;
 }
 
 h1  {
-    text-align: center;
-    font-family: Avenir, Segoe UI, Arial, sans-serif;
     font-weight:bold;
-    font-size:30px;
-    color:whitesmoke;
+    font-size:xx-large;
+    font-family: Avenir, Helvetica Neue, Segoe UI, sans-serif;
+    color:aliceblue;
 }
 
 h1 strong {
     display: block;
-    font-family:Avenir, Segoe UI, Arial, sans-serif;
+    font-family: Avenir, Helvetica Neue, Segoe UI, sans-serif;
     text-align: center;
-    font-size: 40%;
+    font-size: small;
     opacity: 0.75;
-    color: white;
+    color: aliceblue;
     font-style: italic;
     padding-top: 20px;
 }
 
 h2 {
     text-align: center;
-    font-family:Avenir, Segoe UI, Arial, sans-serif;
+    font-family: Avenir, Helvetica Neue, Segoe UI, sans-serif;
     font-weight: bold;
+    font-size: large;
     color: lightskyblue;
 }
 
 h2 strong {
     display: inline;
-    font-family: inherit;
+    font-family: Avenir, Helvetica Neue, Segoe UI, sans-serif;
     text-align: center;
-    font-size: 50%;
+    font-size: 70%;
     color: inherit;
     font-style: italic;
     padding-top: 10px;
@@ -60,26 +61,44 @@ img {
     padding-top: 20px;
 }
 
+body {
+    background-color: whitesmoke; 
+    font-size: small;
+}
+
 ul {
     padding-left: 40px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 12px;
-    font-family: Avenir, Segoe UI, Arial, sans-serif;
+    font-size: small;
+    font-family: Avenir, Helvetica Neue, Segoe UI, sans-serif;
     line-height: 150%;
     list-style-type: disc;
     text-align: left;
 }
 
+div {
+    text-align: justify;
+    font-size: small; 
+}
 p {
-    text-align: center;
-    font-size: 12px;
+    text-align: inherit;
+    font-size: small;
     font-family: Avenir, Segoe UI, Arial, sans-serif;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.card {
+    width: 80%;
+    margin: 40px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0.5px solid darkgray;
+    box-shadow: 0 0 5px 5px lightgray;
 }
 
 /* Tried using span then textarea disabled with div to ignore code snippets in HTML that I wanted to display as regular text on the webpage inline with the rest of the text, but neither option got it to display on one line. Both cause the text to display in a two-line box. Leaving this here to return to at a later time.
@@ -107,11 +126,3 @@ textarea {
     border: none;
     resize: none;
 */
-
-.card {
-    width: 80%;
-    margin: 40px auto;
-    border: 1px solid darkgray;
-    box-shadow: 5px 10px lightgray;
-}
-
